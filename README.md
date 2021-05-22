@@ -51,7 +51,7 @@ Capacitor3-IDFA-iOS-App-Tracking is a native AppTrackingTransparency implementat
 Use **Capacitor3-IDFA-iOS-App-Tracking** plugins in your app.
 
 ```console
- npm install @ottimis/capacitor3-ios-app-tracking
+ npm install @ottimis/capacitor-ios-app-tracking
  ionic cap update
 ```
 
