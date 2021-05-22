@@ -27,9 +27,6 @@ export class IOSAppTrackingWeb extends WebPlugin
   }
 }
 
-const IOSAppTracking = new IOSAppTrackingWeb();
+const IOSAppTracking: IOSAppTrackingPlugin = new IOSAppTrackingWeb();
 
 export { IOSAppTracking };
-
-import { registerWebPlugin } from "@capacitor/core";
-registerWebPlugin(IOSAppTracking);

@@ -1,7 +1,7 @@
 
-# [Capacitor-iOS-IDFA-App-Tracking](https://github.com/migtam628/capacitor-ios-app-tracking) 
+# [Capacitor3-iOS-IDFA-App-Tracking](https://github.com/ottimis/capacitor3-ios-app-tracking) 
 
-Capacitor-IDFA-iOS-App-Tracking is a native AppTrackingTransparency implementation for iOS 14. Now you can use this package as a [Ionic Capacitor](https://capacitor.ionicframework.com) Plugin in your App.
+Capacitor3-IDFA-iOS-App-Tracking is a native AppTrackingTransparency implementation for iOS 14. Now you can use this package as a [Ionic Capacitor](https://capacitor.ionicframework.com) Plugin in your App.
 
 <!-- Badges -->
 <a href="https://npmjs.com/package/capacitor-ios-app-tracking">
@@ -15,6 +15,9 @@ Capacitor-IDFA-iOS-App-Tracking is a native AppTrackingTransparency implementati
 </a>
 
 ## Release Note:
+
+### v3.0.0
+- Implemented Capacitor 3 support.
 
 ### v0.1.1
 - Implemented iOS 14 IDFA AppTrackingTransparency.
@@ -45,10 +48,10 @@ Capacitor-IDFA-iOS-App-Tracking is a native AppTrackingTransparency implementati
 
 ## Installation
 
-Use **Capacitor-IDFA-iOS-App-Tracking** plugins in your app.
+Use **Capacitor3-IDFA-iOS-App-Tracking** plugins in your app.
 
 ```console
- npm install --save capacitor-ios-app-tracking
+ npm install @ottimis/capacitor3-ios-app-tracking
  ionic cap update
 ```
 
@@ -67,10 +70,7 @@ Open your **App/App/Info.plist** file and add this `plist value` line at the rig
 ## Example
 ```typescript
 import React, { useEffect } from "react"
-import { Plugins } from "@capacitor/core";
-import { Response } from 'capacitor-ios-app-tracking'
-
-const { IOSAppTracking } = Plugins;
+import { Response, IOSAppTracking } from "@ottimis/capacitor3-ios-app-tracking";
 
 const App: React.FC = () => {
   const [ response, setResponse ] = useState<Response>()

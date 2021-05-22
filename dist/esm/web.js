@@ -28,6 +28,4 @@ export class IOSAppTrackingWeb extends WebPlugin {
 }
 const IOSAppTracking = new IOSAppTrackingWeb();
 export { IOSAppTracking };
-import { registerWebPlugin } from "@capacitor/core";
-registerWebPlugin(IOSAppTracking);
 //# sourceMappingURL=web.js.map

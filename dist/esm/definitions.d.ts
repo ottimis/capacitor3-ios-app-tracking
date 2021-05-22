@@ -1,8 +1,3 @@
-declare module "@capacitor/core" {
-    interface PluginRegistry {
-        IOSAppTracking: IOSAppTrackingPlugin;
-    }
-}
 export interface IOSAppTrackingPlugin {
     getTrackingStatus(options: {
         value: string;

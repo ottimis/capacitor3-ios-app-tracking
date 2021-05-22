@@ -15,5 +15,5 @@ export declare class IOSAppTrackingWeb extends WebPlugin implements IOSAppTracki
         status: string;
     }>;
 }
-declare const IOSAppTracking: IOSAppTrackingWeb;
+declare const IOSAppTracking: IOSAppTrackingPlugin;
 export { IOSAppTracking };
