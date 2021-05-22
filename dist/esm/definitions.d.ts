@@ -1,13 +1,9 @@
 export interface IOSAppTrackingPlugin {
-    getTrackingStatus(options: {
-        value: string;
-    }): Promise<{
+    getTrackingStatus(): Promise<{
         value: string;
         status: string;
     }>;
-    requestPermission(options: {
-        value: string;
-    }): Promise<{
+    requestPermission(): Promise<{
         value: string;
         status: string;
     }>;

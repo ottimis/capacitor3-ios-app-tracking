@@ -1,10 +1,6 @@
 export interface IOSAppTrackingPlugin {
-  getTrackingStatus(options: {
-    value: string;
-  }): Promise<{ value: string; status: string }>;
-  requestPermission(options: {
-    value: string;
-  }): Promise<{ value: string; status: string }>;
+  getTrackingStatus(): Promise<{ value: string; status: string }>;
+  requestPermission(): Promise<{ value: string; status: string }>;
 }
 
 export interface Response {
@@ -12,4 +8,4 @@ export interface Response {
   status: Status;
 }
 
-export type Status = 'authorized' | 'denied' | 'unrequested' | 'restricted' 
+export type Status = 'authorized' | 'denied' | 'unrequested' | 'restricted'

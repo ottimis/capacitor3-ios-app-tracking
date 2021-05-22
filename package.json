@@ -1,6 +1,6 @@
 {
   "name": "@ottimis/capacitor-ios-app-tracking",
-  "version": "3.0.0-alpha",
+  "version": "3.0.3-alpha",
   "description": "App AD Tracking for iOS 14.",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -26,6 +26,10 @@
   ],
   "keywords": [
     "capacitor",
+    "capacitor3",
+    "AATT",
+    "AppTrackingTransparency",
+    "ionic",
     "plugin",
     "native"
   ],

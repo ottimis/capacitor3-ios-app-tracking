@@ -14,8 +14,21 @@ public class IOSAppTracking: CAPPlugin {
         let advertising = ASIdentifierManager.init().advertisingIdentifier.uuidString
         if #available(iOS 14.0, *) {
             let status : ATTrackingManager.AuthorizationStatus = ATTrackingManager.trackingAuthorizationStatus
+            var s = "";
+            switch status.rawValue {
+                case 0:
+                    s = "unrequested"
+                case 1:
+                    s = "restricted"
+                case 2:
+                    s = "denied";
+                case 3:
+                    s = "authorized";
+                default:
+                    s = "";
+            }
             call.resolve([
-                "value": advertising, "status": status.rawValue == 0 ? "unrequested" : status.rawValue == 1 ? "restricted" : status.rawValue == 2 ? "denied" : status.rawValue == 3 ? "authorized" : ""
+                "value": advertising, "status": s
             ])
         } else {
             call.resolve([ "value": advertising, "status": "authorized" ])
@@ -28,8 +41,21 @@ public class IOSAppTracking: CAPPlugin {
             ATTrackingManager.requestTrackingAuthorization { (res) in
                 let advertising = ASIdentifierManager.init().advertisingIdentifier.uuidString
                 let status = res
+                var s = "";
+                switch status.rawValue {
+                    case 0:
+                        s = "unrequested"
+                    case 1:
+                        s = "restricted"
+                    case 2:
+                        s = "denied";
+                    case 3:
+                        s = "authorized";
+                    default:
+                        s = "";
+                }
                 call.resolve([
-                    "value": advertising, "status": status.rawValue == 0 ? "unrequested" : status.rawValue == 1 ? "restricted" : status.rawValue == 2 ? "denied" : status.rawValue == 3 ? "authorized" : ""
+                    "value": advertising, "status": s
                 ])
             }
         } else {
