@@ -1,7 +1,7 @@
 
   Pod::Spec.new do |s|
-    s.name = 'CapacitorIosAppTracking'
-    s.version = '3.0.5'
+    s.name = 'OttimisCapacitorIosAppTracking'
+    s.version = '3.0.6'
     s.summary = 'App AD Tracking for iOS 14.'
     s.license = 'MIT'
     s.homepage = 'https://github.com/ottimis/capacitor3-ios-app-tracking.git'
