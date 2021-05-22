@@ -1,6 +1,6 @@
 {
   "name": "@ottimis/capacitor-ios-app-tracking",
-  "version": "3.0.3-alpha",
+  "version": "3.0.5",
   "description": "App AD Tracking for iOS 14.",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -22,7 +22,7 @@
   "files": [
     "dist/",
     "ios/",
-    "CapacitorIosAppTracking.podspec"
+    "OttimisCapacitorIosAppTracking.podspec"
   ],
   "keywords": [
     "capacitor",
